@@ -1,0 +1,7 @@
+[options]
+docs = enabled
+plugins = true
+
+[properties]
+native_file = ['/home/jet/Desktop/tools/qemu/build/config-meson.cross']
+
