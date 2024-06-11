@@ -1,1 +1,1 @@
-cmd_klibc-utils/lib.a := rm -f klibc-utils/lib.a; /home/jet/Desktop/tools/gcc-arm-Toolchain/bin/arm-none-linux-gnueabihf-ar  rcs klibc-utils/lib.a klibc-utils/resume.o
+cmd_klibc-utils/lib.a := rm -f klibc-utils/lib.a; ../gcc-arm-Toolchain/bin/arm-none-linux-gnueabihf-ar  rcs klibc-utils/lib.a klibc-utils/resume.o

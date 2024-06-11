@@ -1,2 +1,0 @@
-/home/jet/Desktop/tools/qemu/build/meson-private/cmake_SDL2/CMakeFiles/edit_cache.dir
-/home/jet/Desktop/tools/qemu/build/meson-private/cmake_SDL2/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,1 @@
-/home/jet/Desktop/tools/qemu/.gdbinit
+/home/Jet/QEMU/qemu/.gdbinit

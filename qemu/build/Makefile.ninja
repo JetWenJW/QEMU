@@ -1878,6 +1878,7 @@ libcommon.fa.p/hw_misc_vmcoreinfo.c.o \
 libcommon.fa.p/hw_misc_debugexit.c.o \
 libcommon.fa.p/hw_misc_pc-testdev.c.o \
 libcommon.fa.p/hw_misc_pci-testdev.c.o \
+libcommon.fa.p/hw_misc_pci_echodev.c.o \
 libcommon.fa.p/hw_misc_unimp.c.o \
 libcommon.fa.p/hw_misc_empty_slot.c.o \
 libcommon.fa.p/hw_misc_led.c.o \
@@ -2948,23 +2949,10 @@ pc-bios/edk2-i386-secure-code.fd \
 pc-bios/edk2-i386-vars.fd \
 pc-bios/edk2-x86_64-code.fd \
 pc-bios/edk2-x86_64-secure-code.fd \
-docs/docs.stamp \
-docs/qemu-ga.8 \
-docs/qemu-ga-ref.7 \
-docs/qemu-qmp-ref.7 \
-docs/qemu-storage-daemon-qmp-ref.7 \
-docs/qemu-img.1 \
-docs/qemu-nbd.8 \
-docs/qemu-pr-helper.8 \
-docs/qemu-storage-daemon.1 \
-docs/qemu-trace-stap.1 \
-docs/virtfs-proxy-helper.1 \
-docs/qemu.1 \
-docs/qemu-block-drivers.7 \
-docs/qemu-cpu-models.7 \
-sphinxdocs \
-html \
-man \
+pc-bios/bamboo.dtb \
+pc-bios/canyonlands.dtb \
+pc-bios/petalogix-s3adsp1800.dtb \
+pc-bios/petalogix-ml605.dtb \
 tests/bench/qht-bench.p/qht-bench.c.o \
 tests/bench/qht-bench \
 tests/bench/qtree-bench.p/qtree-bench.c.o \
@@ -3708,7 +3696,7 @@ tests/unit/test-replication.p/iothread.c.o \
 tests/unit/test-replication \
 tests/unit/ptimer-test.p/ptimer-test.c.o \
 tests/unit/ptimer-test.p/ptimer-test-stubs.c.o \
-tests/unit/ptimer-test.p/_home_jet_Desktop_tools_qemu_hw_core_ptimer.c.o \
+tests/unit/ptimer-test.p/_home_Jet_QEMU_qemu_hw_core_ptimer.c.o \
 tests/unit/ptimer-test \
 tests/unit/test-iov.p/test-iov.c.o \
 tests/unit/test-iov \
@@ -3717,7 +3705,7 @@ tests/unit/test-opts-visitor \
 tests/unit/test-xs-node.p/test-xs-node.c.o \
 tests/unit/test-xs-node \
 tests/unit/test-virtio-dmabuf.p/test-virtio-dmabuf.c.o \
-tests/unit/test-virtio-dmabuf.p/_home_jet_Desktop_tools_qemu_hw_display_virtio-dmabuf.c.o \
+tests/unit/test-virtio-dmabuf.p/_home_Jet_QEMU_qemu_hw_display_virtio-dmabuf.c.o \
 tests/unit/test-virtio-dmabuf \
 tests/unit/test-qmp-cmds.p/test-qmp-cmds.c.o \
 tests/unit/test-qmp-cmds \
@@ -3731,7 +3719,7 @@ tests/unit/test-base64 \
 tests/unit/test-bufferiszero.p/test-bufferiszero.c.o \
 tests/unit/test-bufferiszero \
 tests/unit/test-smp-parse.p/test-smp-parse.c.o \
-tests/unit/test-smp-parse.p/_home_jet_Desktop_tools_qemu_hw_core_machine-smp.c.o \
+tests/unit/test-smp-parse.p/_home_Jet_QEMU_qemu_hw_core_machine-smp.c.o \
 tests/unit/test-smp-parse \
 tests/unit/test-vmstate.p/test-vmstate.c.o \
 tests/unit/test-vmstate \
@@ -3762,9 +3750,6 @@ tests/qapi-schema/doc-good-qapi-types.c \
 tests/qapi-schema/doc-good-qapi-types.h \
 tests/qapi-schema/doc-good-qapi-visit.c \
 tests/qapi-schema/doc-good-qapi-visit.h \
-tests/qapi-schema/doc-good.txt \
-tests/qapi-schema/doc-good.txt.nocr \
-tests/qapi-schema/doc-good.ref.nocr \
 tests/qtest/dbus-vmstate1.h \
 tests/qtest/dbus-vmstate1.c \
 tests/qtest/sse-timer-test.p/sse-timer-test.c.o \
@@ -3915,12 +3900,12 @@ reconfigure \
 ../meson.build \
 ../meson_options.txt \
 ../VERSION \
-/home/jet/Desktop/tools/qemu/build/config-host.mak \
+/home/Jet/QEMU/qemu/build/config-host.mak \
 ../scripts/xen-detect.c \
 ../subprojects/dtc/meson.build \
 ../subprojects/dtc/meson_options.txt \
 ../subprojects/dtc/libfdt/meson.build \
-/home/jet/Desktop/tools/qemu/configs/targets/arm-softmmu.mak \
+/home/Jet/QEMU/qemu/configs/targets/arm-softmmu.mak \
 ../configs/devices/arm-softmmu/default.mak \
 ../Kconfig \
 ../scripts/minikconf.py \
@@ -4017,7 +4002,7 @@ reconfigure \
 ../target/sparc/Kconfig \
 ../target/tricore/Kconfig \
 ../target/xtensa/Kconfig \
-/home/jet/Desktop/tools/qemu/configs/targets/arm-linux-user.mak \
+/home/Jet/QEMU/qemu/configs/targets/arm-linux-user.mak \
 ../subprojects/libvhost-user/meson.build \
 ../subprojects/libvduse/meson.build \
 ../qapi/meson.build \
@@ -4224,9 +4209,6 @@ reconfigure \
 ../pc-bios/descriptors/60-edk2-x86_64.json \
 ../pc-bios/keymaps/meson.build \
 ../docs/meson.build \
-/usr/bin/env \
-/usr/bin/mkdir \
-/usr/bin/touch \
 ../tests/meson.build \
 ../tests/bench/meson.build \
 ../tests/qemu-iotests/meson.build \
@@ -4245,18 +4227,20 @@ reconfigure \
 ../tests/qapi-schema/meson.build \
 ../tests/qtest/meson.build \
 ../tests/migration/meson.build \
-/home/jet/Desktop/tools/qemu/build/config-meson.cross \
+/home/Jet/QEMU/qemu/build/tests/tcg/arm-softmmu/config-target.mak \
+/home/Jet/QEMU/qemu/build/tests/tcg/arm-linux-user/config-target.mak \
+/home/Jet/QEMU/qemu/build/config-meson.cross \
 meson-private/coredata.dat
 build-files = \
     ../meson.build \
     ../meson_options.txt \
     ../VERSION \
-    /home/jet/Desktop/tools/qemu/build/config-host.mak \
+    /home/Jet/QEMU/qemu/build/config-host.mak \
     ../scripts/xen-detect.c \
     ../subprojects/dtc/meson.build \
     ../subprojects/dtc/meson_options.txt \
     ../subprojects/dtc/libfdt/meson.build \
-    /home/jet/Desktop/tools/qemu/configs/targets/arm-softmmu.mak \
+    /home/Jet/QEMU/qemu/configs/targets/arm-softmmu.mak \
     ../configs/devices/arm-softmmu/default.mak \
     ../Kconfig \
     ../scripts/minikconf.py \
@@ -4353,7 +4337,7 @@ build-files = \
     ../target/sparc/Kconfig \
     ../target/tricore/Kconfig \
     ../target/xtensa/Kconfig \
-    /home/jet/Desktop/tools/qemu/configs/targets/arm-linux-user.mak \
+    /home/Jet/QEMU/qemu/configs/targets/arm-linux-user.mak \
     ../subprojects/libvhost-user/meson.build \
     ../subprojects/libvduse/meson.build \
     ../qapi/meson.build \
@@ -4560,9 +4544,6 @@ build-files = \
     ../pc-bios/descriptors/60-edk2-x86_64.json \
     ../pc-bios/keymaps/meson.build \
     ../docs/meson.build \
-    /usr/bin/env \
-    /usr/bin/mkdir \
-    /usr/bin/touch \
     ../tests/meson.build \
     ../tests/bench/meson.build \
     ../tests/qemu-iotests/meson.build \
@@ -4581,5 +4562,7 @@ build-files = \
     ../tests/qapi-schema/meson.build \
     ../tests/qtest/meson.build \
     ../tests/migration/meson.build \
-    /home/jet/Desktop/tools/qemu/build/config-meson.cross \
+    /home/Jet/QEMU/qemu/build/tests/tcg/arm-softmmu/config-target.mak \
+    /home/Jet/QEMU/qemu/build/tests/tcg/arm-linux-user/config-target.mak \
+    /home/Jet/QEMU/qemu/build/config-meson.cross \
     meson-private/coredata.dat \

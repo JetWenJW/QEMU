@@ -1,1 +1,1 @@
-/home/jet/Desktop/tools/qemu/tests/qemu-iotests/Makefile
+/home/Jet/QEMU/qemu/tests/qemu-iotests/Makefile

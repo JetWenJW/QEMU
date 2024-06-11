@@ -1,8 +1,8 @@
 libcommon.fa.p/hw_net_rocker_rocker_of_dpa.c.o: \
  ../hw/net/rocker/rocker_of_dpa.c /usr/include/stdc-predef.h \
- /home/jet/Desktop/tools/qemu/include/qemu/osdep.h config-host.h \
- /home/jet/Desktop/tools/qemu/include/exec/poison.h config-poison.h \
- /home/jet/Desktop/tools/qemu/include/qemu/compiler.h \
+ /home/Jet/QEMU/qemu/include/qemu/osdep.h config-host.h \
+ /home/Jet/QEMU/qemu/include/exec/poison.h config-poison.h \
+ /home/Jet/QEMU/qemu/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -105,9 +105,9 @@ libcommon.fa.p/hw_net_rocker_rocker_of_dpa.c.o: \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/jet/Desktop/tools/qemu/linux-headers/asm-generic/bitsperlong.h \
+ /home/Jet/QEMU/qemu/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/jet/Desktop/tools/qemu/linux-headers/linux/stddef.h \
+ /home/Jet/QEMU/qemu/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -142,9 +142,8 @@ libcommon.fa.p/hw_net_rocker_rocker_of_dpa.c.o: \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/jet/Desktop/tools/qemu/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/Jet/QEMU/qemu/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
@@ -221,7 +220,7 @@ libcommon.fa.p/hw_net_rocker_rocker_of_dpa.c.o: \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/os-posix.h \
+ /home/Jet/QEMU/qemu/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -243,48 +242,44 @@ libcommon.fa.p/hw_net_rocker_rocker_of_dpa.c.o: \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/jet/Desktop/tools/qemu/include/qemu/typedefs.h \
- /home/jet/Desktop/tools/qemu/include/net/eth.h \
- /home/jet/Desktop/tools/qemu/include/qemu/bswap.h \
- /home/jet/Desktop/tools/qemu/include/qemu/iov.h \
- /home/jet/Desktop/tools/qemu/include/qapi/error.h \
- qapi/qapi-types-error.h qapi/qapi-builtin-types.h \
- /home/jet/Desktop/tools/qemu/include/qapi/util.h \
+ /home/Jet/QEMU/qemu/include/qemu/typedefs.h \
+ /home/Jet/QEMU/qemu/include/net/eth.h \
+ /home/Jet/QEMU/qemu/include/qemu/bswap.h \
+ /home/Jet/QEMU/qemu/include/qemu/iov.h \
+ /home/Jet/QEMU/qemu/include/qapi/error.h qapi/qapi-types-error.h \
+ qapi/qapi-builtin-types.h /home/Jet/QEMU/qemu/include/qapi/util.h \
  qapi/qapi-commands-rocker.h qapi/qapi-types-rocker.h \
- /home/jet/Desktop/tools/qemu/include/qemu/timer.h \
- /home/jet/Desktop/tools/qemu/include/qemu/bitops.h \
- /home/jet/Desktop/tools/qemu/include/qemu/host-utils.h \
- /home/jet/Desktop/tools/qemu/include/qemu/int128.h \
- /home/jet/Desktop/tools/qemu/include/qemu/atomic.h \
- /home/jet/Desktop/tools/qemu/include/qemu/compiler.h \
- /home/jet/Desktop/tools/qemu/include/qemu/notify.h \
- /home/jet/Desktop/tools/qemu/include/qemu/queue.h \
- /home/jet/Desktop/tools/qemu/include/qemu/host-utils.h \
- ../hw/net/rocker/rocker.h \
- /home/jet/Desktop/tools/qemu/include/qemu/sockets.h \
- qapi/qapi-types-sockets.h \
- /home/jet/Desktop/tools/qemu/include/qom/object.h \
- /home/jet/Desktop/tools/qemu/include/qemu/module.h \
- ../hw/net/rocker/rocker_hw.h ../hw/net/rocker/rocker_fp.h \
- /home/jet/Desktop/tools/qemu/include/net/net.h qapi/qapi-types-net.h \
- qapi/qapi-types-sockets.h \
- /home/jet/Desktop/tools/qemu/include/net/queue.h \
- /home/jet/Desktop/tools/qemu/include/hw/qdev-properties-system.h \
- /home/jet/Desktop/tools/qemu/include/hw/qdev-properties.h \
- /home/jet/Desktop/tools/qemu/include/hw/qdev-core.h \
- /home/jet/Desktop/tools/qemu/include/qemu/atomic.h \
- /home/jet/Desktop/tools/qemu/include/qemu/bitmap.h \
- /home/jet/Desktop/tools/qemu/include/qemu/rcu.h \
- /home/jet/Desktop/tools/qemu/include/qemu/thread.h \
- /home/jet/Desktop/tools/qemu/include/qemu/processor.h \
- /home/jet/Desktop/tools/qemu/include/qemu/clang-tsa.h \
- /home/jet/Desktop/tools/qemu/include/qemu/thread-posix.h \
- /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/jet/Desktop/tools/qemu/include/qemu/qsp.h \
- /home/jet/Desktop/tools/qemu/include/qemu/sys_membarrier.h \
- /home/jet/Desktop/tools/qemu/include/qemu/coroutine-tls.h \
- /home/jet/Desktop/tools/qemu/include/qemu/rcu_queue.h \
- /home/jet/Desktop/tools/qemu/include/hw/hotplug.h \
- /home/jet/Desktop/tools/qemu/include/hw/resettable.h \
+ /home/Jet/QEMU/qemu/include/qemu/timer.h \
+ /home/Jet/QEMU/qemu/include/qemu/bitops.h \
+ /home/Jet/QEMU/qemu/include/qemu/host-utils.h \
+ /home/Jet/QEMU/qemu/include/qemu/int128.h \
+ /home/Jet/QEMU/qemu/include/qemu/atomic.h \
+ /home/Jet/QEMU/qemu/include/qemu/compiler.h \
+ /home/Jet/QEMU/qemu/include/qemu/notify.h \
+ /home/Jet/QEMU/qemu/include/qemu/queue.h \
+ /home/Jet/QEMU/qemu/include/qemu/host-utils.h ../hw/net/rocker/rocker.h \
+ /home/Jet/QEMU/qemu/include/qemu/sockets.h qapi/qapi-types-sockets.h \
+ /home/Jet/QEMU/qemu/include/qom/object.h \
+ /home/Jet/QEMU/qemu/include/qemu/module.h ../hw/net/rocker/rocker_hw.h \
+ ../hw/net/rocker/rocker_fp.h /home/Jet/QEMU/qemu/include/net/net.h \
+ qapi/qapi-types-net.h qapi/qapi-types-sockets.h \
+ /home/Jet/QEMU/qemu/include/net/queue.h \
+ /home/Jet/QEMU/qemu/include/hw/qdev-properties-system.h \
+ /home/Jet/QEMU/qemu/include/hw/qdev-properties.h \
+ /home/Jet/QEMU/qemu/include/hw/qdev-core.h \
+ /home/Jet/QEMU/qemu/include/qemu/atomic.h \
+ /home/Jet/QEMU/qemu/include/qemu/bitmap.h \
+ /home/Jet/QEMU/qemu/include/qemu/rcu.h \
+ /home/Jet/QEMU/qemu/include/qemu/thread.h \
+ /home/Jet/QEMU/qemu/include/qemu/processor.h \
+ /home/Jet/QEMU/qemu/include/qemu/clang-tsa.h \
+ /home/Jet/QEMU/qemu/include/qemu/thread-posix.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /home/Jet/QEMU/qemu/include/qemu/qsp.h \
+ /home/Jet/QEMU/qemu/include/qemu/sys_membarrier.h \
+ /home/Jet/QEMU/qemu/include/qemu/coroutine-tls.h \
+ /home/Jet/QEMU/qemu/include/qemu/rcu_queue.h \
+ /home/Jet/QEMU/qemu/include/hw/hotplug.h \
+ /home/Jet/QEMU/qemu/include/hw/resettable.h \
  ../hw/net/rocker/rocker_tlv.h ../hw/net/rocker/rocker_world.h \
  ../hw/net/rocker/rocker_desc.h ../hw/net/rocker/rocker_of_dpa.h

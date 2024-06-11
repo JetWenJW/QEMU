@@ -1,8 +1,7 @@
 libqemu-arm-softmmu.fa.p/hw_arm_exynos4210.c.o: ../hw/arm/exynos4210.c \
- /usr/include/stdc-predef.h \
- /home/jet/Desktop/tools/qemu/include/qemu/osdep.h config-host.h \
- arm-softmmu-config-target.h \
- /home/jet/Desktop/tools/qemu/include/qemu/compiler.h \
+ /usr/include/stdc-predef.h /home/Jet/QEMU/qemu/include/qemu/osdep.h \
+ config-host.h arm-softmmu-config-target.h \
+ /home/Jet/QEMU/qemu/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -105,9 +104,9 @@ libqemu-arm-softmmu.fa.p/hw_arm_exynos4210.c.o: ../hw/arm/exynos4210.c \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/jet/Desktop/tools/qemu/linux-headers/asm-generic/bitsperlong.h \
+ /home/Jet/QEMU/qemu/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/jet/Desktop/tools/qemu/linux-headers/linux/stddef.h \
+ /home/Jet/QEMU/qemu/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -142,9 +141,8 @@ libqemu-arm-softmmu.fa.p/hw_arm_exynos4210.c.o: ../hw/arm/exynos4210.c \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/jet/Desktop/tools/qemu/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/Jet/QEMU/qemu/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
@@ -221,7 +219,7 @@ libqemu-arm-softmmu.fa.p/hw_arm_exynos4210.c.o: ../hw/arm/exynos4210.c \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/os-posix.h \
+ /home/Jet/QEMU/qemu/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -243,133 +241,128 @@ libqemu-arm-softmmu.fa.p/hw_arm_exynos4210.c.o: ../hw/arm/exynos4210.c \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/jet/Desktop/tools/qemu/include/qemu/typedefs.h \
- /home/jet/Desktop/tools/qemu/include/qapi/error.h \
- qapi/qapi-types-error.h qapi/qapi-builtin-types.h \
- /home/jet/Desktop/tools/qemu/include/qapi/util.h \
- /home/jet/Desktop/tools/qemu/include/exec/tswap.h \
- /home/jet/Desktop/tools/qemu/include/qemu/bswap.h ../target/arm/cpu.h \
- ../target/arm/kvm-consts.h \
- /home/jet/Desktop/tools/qemu/include/qemu/cpu-float.h \
- /home/jet/Desktop/tools/qemu/include/fpu/softfloat-types.h \
- /home/jet/Desktop/tools/qemu/include/hw/registerfields.h \
- /home/jet/Desktop/tools/qemu/include/qemu/bitops.h \
- /home/jet/Desktop/tools/qemu/include/qemu/host-utils.h \
- /home/jet/Desktop/tools/qemu/include/qemu/int128.h \
- /home/jet/Desktop/tools/qemu/include/qemu/atomic.h \
- /home/jet/Desktop/tools/qemu/include/qemu/compiler.h \
- ../target/arm/cpu-qom.h \
- /home/jet/Desktop/tools/qemu/include/hw/core/cpu.h \
- /home/jet/Desktop/tools/qemu/include/hw/qdev-core.h \
- /home/jet/Desktop/tools/qemu/include/qemu/atomic.h \
- /home/jet/Desktop/tools/qemu/include/qemu/queue.h \
- /home/jet/Desktop/tools/qemu/include/qemu/bitmap.h \
- /home/jet/Desktop/tools/qemu/include/qemu/rcu.h \
- /home/jet/Desktop/tools/qemu/include/qemu/thread.h \
- /home/jet/Desktop/tools/qemu/include/qemu/processor.h \
- /home/jet/Desktop/tools/qemu/include/qemu/clang-tsa.h \
- /home/jet/Desktop/tools/qemu/include/qemu/thread-posix.h \
- /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/jet/Desktop/tools/qemu/include/qemu/qsp.h \
- /home/jet/Desktop/tools/qemu/include/qemu/notify.h \
- /home/jet/Desktop/tools/qemu/include/qemu/sys_membarrier.h \
- /home/jet/Desktop/tools/qemu/include/qemu/coroutine-tls.h \
- /home/jet/Desktop/tools/qemu/include/qemu/rcu_queue.h \
- /home/jet/Desktop/tools/qemu/include/qom/object.h \
- /home/jet/Desktop/tools/qemu/include/qemu/module.h \
- /home/jet/Desktop/tools/qemu/include/hw/hotplug.h \
- /home/jet/Desktop/tools/qemu/include/hw/resettable.h \
- /home/jet/Desktop/tools/qemu/include/disas/dis-asm.h \
- /home/jet/Desktop/tools/qemu/include/exec/breakpoint.h \
- /home/jet/Desktop/tools/qemu/include/exec/vaddr.h \
- /home/jet/Desktop/tools/qemu/include/exec/memattrs.h \
- /home/jet/Desktop/tools/qemu/include/exec/hwaddr.h \
- /home/jet/Desktop/tools/qemu/include/exec/mmu-access-type.h \
- /home/jet/Desktop/tools/qemu/include/exec/tlb-common.h \
- qapi/qapi-types-machine.h qapi/qapi-types-common.h \
- qapi/qapi-types-machine-common.h qapi/qapi-types-run-state.h \
- /home/jet/Desktop/tools/qemu/include/exec/cpu-defs.h \
- /home/jet/Desktop/tools/qemu/include/qemu/host-utils.h \
- ../target/arm/cpu-param.h \
- /home/jet/Desktop/tools/qemu/include/exec/target_long.h \
- /home/jet/Desktop/tools/qemu/include/exec/gdbstub.h \
- /home/jet/Desktop/tools/qemu/include/exec/page-protection.h \
+ /home/Jet/QEMU/qemu/include/qemu/typedefs.h \
+ /home/Jet/QEMU/qemu/include/qapi/error.h qapi/qapi-types-error.h \
+ qapi/qapi-builtin-types.h /home/Jet/QEMU/qemu/include/qapi/util.h \
+ /home/Jet/QEMU/qemu/include/exec/tswap.h \
+ /home/Jet/QEMU/qemu/include/qemu/bswap.h ../target/arm/cpu.h \
+ ../target/arm/kvm-consts.h /home/Jet/QEMU/qemu/include/qemu/cpu-float.h \
+ /home/Jet/QEMU/qemu/include/fpu/softfloat-types.h \
+ /home/Jet/QEMU/qemu/include/hw/registerfields.h \
+ /home/Jet/QEMU/qemu/include/qemu/bitops.h \
+ /home/Jet/QEMU/qemu/include/qemu/host-utils.h \
+ /home/Jet/QEMU/qemu/include/qemu/int128.h \
+ /home/Jet/QEMU/qemu/include/qemu/atomic.h \
+ /home/Jet/QEMU/qemu/include/qemu/compiler.h ../target/arm/cpu-qom.h \
+ /home/Jet/QEMU/qemu/include/hw/core/cpu.h \
+ /home/Jet/QEMU/qemu/include/hw/qdev-core.h \
+ /home/Jet/QEMU/qemu/include/qemu/atomic.h \
+ /home/Jet/QEMU/qemu/include/qemu/queue.h \
+ /home/Jet/QEMU/qemu/include/qemu/bitmap.h \
+ /home/Jet/QEMU/qemu/include/qemu/rcu.h \
+ /home/Jet/QEMU/qemu/include/qemu/thread.h \
+ /home/Jet/QEMU/qemu/include/qemu/processor.h \
+ /home/Jet/QEMU/qemu/include/qemu/clang-tsa.h \
+ /home/Jet/QEMU/qemu/include/qemu/thread-posix.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /home/Jet/QEMU/qemu/include/qemu/qsp.h \
+ /home/Jet/QEMU/qemu/include/qemu/notify.h \
+ /home/Jet/QEMU/qemu/include/qemu/sys_membarrier.h \
+ /home/Jet/QEMU/qemu/include/qemu/coroutine-tls.h \
+ /home/Jet/QEMU/qemu/include/qemu/rcu_queue.h \
+ /home/Jet/QEMU/qemu/include/qom/object.h \
+ /home/Jet/QEMU/qemu/include/qemu/module.h \
+ /home/Jet/QEMU/qemu/include/hw/hotplug.h \
+ /home/Jet/QEMU/qemu/include/hw/resettable.h \
+ /home/Jet/QEMU/qemu/include/disas/dis-asm.h \
+ /home/Jet/QEMU/qemu/include/exec/breakpoint.h \
+ /home/Jet/QEMU/qemu/include/exec/vaddr.h \
+ /home/Jet/QEMU/qemu/include/exec/memattrs.h \
+ /home/Jet/QEMU/qemu/include/exec/hwaddr.h \
+ /home/Jet/QEMU/qemu/include/exec/mmu-access-type.h \
+ /home/Jet/QEMU/qemu/include/exec/tlb-common.h qapi/qapi-types-machine.h \
+ qapi/qapi-types-common.h qapi/qapi-types-machine-common.h \
+ qapi/qapi-types-run-state.h /home/Jet/QEMU/qemu/include/exec/cpu-defs.h \
+ /home/Jet/QEMU/qemu/include/qemu/host-utils.h ../target/arm/cpu-param.h \
+ /home/Jet/QEMU/qemu/include/exec/target_long.h \
+ /home/Jet/QEMU/qemu/include/exec/gdbstub.h \
+ /home/Jet/QEMU/qemu/include/exec/page-protection.h \
  qapi/qapi-types-common.h \
- /home/jet/Desktop/tools/qemu/target/arm/multiprocessing.h \
- /home/jet/Desktop/tools/qemu/target/arm/cpu-qom.h \
- /home/jet/Desktop/tools/qemu/target/arm/gtimer.h \
- /home/jet/Desktop/tools/qemu/include/exec/cpu-all.h \
- /home/jet/Desktop/tools/qemu/include/exec/cpu-common.h \
- /home/jet/Desktop/tools/qemu/include/tcg/debug-assert.h \
- /home/jet/Desktop/tools/qemu/include/exec/memory.h \
- /home/jet/Desktop/tools/qemu/include/exec/memop.h \
- /home/jet/Desktop/tools/qemu/include/exec/ramlist.h \
- /home/jet/Desktop/tools/qemu/include/qemu/range.h \
- /home/jet/Desktop/tools/qemu/include/exec/memory_ldst.h.inc \
- /home/jet/Desktop/tools/qemu/include/exec/memory_ldst_phys.h.inc \
- /home/jet/Desktop/tools/qemu/include/exec/memory_ldst_cached.h.inc \
- /home/jet/Desktop/tools/qemu/include/exec/page-vary.h \
- /home/jet/Desktop/tools/qemu/include/hw/cpu/a9mpcore.h \
- /home/jet/Desktop/tools/qemu/include/hw/sysbus.h \
- /home/jet/Desktop/tools/qemu/include/hw/intc/arm_gic.h \
- /home/jet/Desktop/tools/qemu/include/hw/intc/arm_gic_common.h \
- /home/jet/Desktop/tools/qemu/include/hw/misc/a9scu.h \
- /home/jet/Desktop/tools/qemu/include/hw/timer/arm_mptimer.h \
- /home/jet/Desktop/tools/qemu/include/hw/timer/a9gtimer.h \
- /home/jet/Desktop/tools/qemu/include/hw/irq.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/blockdev.h \
- /home/jet/Desktop/tools/qemu/include/block/block.h \
- /home/jet/Desktop/tools/qemu/include/block/block-global-state.h \
- /home/jet/Desktop/tools/qemu/include/block/block-common.h \
+ /home/Jet/QEMU/qemu/target/arm/multiprocessing.h \
+ /home/Jet/QEMU/qemu/target/arm/cpu-qom.h \
+ /home/Jet/QEMU/qemu/target/arm/gtimer.h \
+ /home/Jet/QEMU/qemu/include/exec/cpu-all.h \
+ /home/Jet/QEMU/qemu/include/exec/cpu-common.h \
+ /home/Jet/QEMU/qemu/include/tcg/debug-assert.h \
+ /home/Jet/QEMU/qemu/include/exec/memory.h \
+ /home/Jet/QEMU/qemu/include/exec/memop.h \
+ /home/Jet/QEMU/qemu/include/exec/ramlist.h \
+ /home/Jet/QEMU/qemu/include/qemu/range.h \
+ /home/Jet/QEMU/qemu/include/exec/memory_ldst.h.inc \
+ /home/Jet/QEMU/qemu/include/exec/memory_ldst_phys.h.inc \
+ /home/Jet/QEMU/qemu/include/exec/memory_ldst_cached.h.inc \
+ /home/Jet/QEMU/qemu/include/exec/page-vary.h \
+ /home/Jet/QEMU/qemu/include/hw/cpu/a9mpcore.h \
+ /home/Jet/QEMU/qemu/include/hw/sysbus.h \
+ /home/Jet/QEMU/qemu/include/hw/intc/arm_gic.h \
+ /home/Jet/QEMU/qemu/include/hw/intc/arm_gic_common.h \
+ /home/Jet/QEMU/qemu/include/hw/misc/a9scu.h \
+ /home/Jet/QEMU/qemu/include/hw/timer/arm_mptimer.h \
+ /home/Jet/QEMU/qemu/include/hw/timer/a9gtimer.h \
+ /home/Jet/QEMU/qemu/include/hw/irq.h \
+ /home/Jet/QEMU/qemu/include/sysemu/blockdev.h \
+ /home/Jet/QEMU/qemu/include/block/block.h \
+ /home/Jet/QEMU/qemu/include/block/block-global-state.h \
+ /home/Jet/QEMU/qemu/include/block/block-common.h \
  qapi/qapi-types-block-core.h qapi/qapi-types-crypto.h \
  qapi/qapi-types-job.h qapi/qapi-types-sockets.h \
- /home/jet/Desktop/tools/qemu/include/block/blockjob.h \
- /home/jet/Desktop/tools/qemu/include/qemu/job.h qapi/qapi-types-job.h \
- /home/jet/Desktop/tools/qemu/include/qemu/progress_meter.h \
- /home/jet/Desktop/tools/qemu/include/qemu/coroutine.h \
- /home/jet/Desktop/tools/qemu/include/qemu/coroutine-core.h \
- /home/jet/Desktop/tools/qemu/include/qemu/timer.h \
- /home/jet/Desktop/tools/qemu/include/qemu/lockable.h \
- /home/jet/Desktop/tools/qemu/include/block/aio.h \
- /home/jet/Desktop/tools/qemu/include/qemu/event_notifier.h \
- /home/jet/Desktop/tools/qemu/include/block/graph-lock.h \
- /home/jet/Desktop/tools/qemu/include/qemu/ratelimit.h \
- /home/jet/Desktop/tools/qemu/include/qemu/transactions.h \
+ /home/Jet/QEMU/qemu/include/block/blockjob.h \
+ /home/Jet/QEMU/qemu/include/qemu/job.h qapi/qapi-types-job.h \
+ /home/Jet/QEMU/qemu/include/qemu/progress_meter.h \
+ /home/Jet/QEMU/qemu/include/qemu/coroutine.h \
+ /home/Jet/QEMU/qemu/include/qemu/coroutine-core.h \
+ /home/Jet/QEMU/qemu/include/qemu/timer.h \
+ /home/Jet/QEMU/qemu/include/qemu/lockable.h \
+ /home/Jet/QEMU/qemu/include/block/aio.h \
+ /home/Jet/QEMU/qemu/include/qemu/event_notifier.h \
+ /home/Jet/QEMU/qemu/include/block/graph-lock.h \
+ /home/Jet/QEMU/qemu/include/qemu/ratelimit.h \
+ /home/Jet/QEMU/qemu/include/qemu/transactions.h \
  /usr/include/glib-2.0/gmodule.h \
- /home/jet/Desktop/tools/qemu/include/block/block-io.h \
- /home/jet/Desktop/tools/qemu/include/block/aio-wait.h \
- /home/jet/Desktop/tools/qemu/include/qemu/main-loop.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/event-loop-base.h \
- /home/jet/Desktop/tools/qemu/include/qemu/iov.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/sysemu.h \
- /home/jet/Desktop/tools/qemu/include/qemu/uuid.h \
- /home/jet/Desktop/tools/qemu/include/hw/arm/boot.h \
- /home/jet/Desktop/tools/qemu/include/hw/loader.h \
- /home/jet/Desktop/tools/qemu/include/hw/nvram/fw_cfg.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/qemu_fw_cfg.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/types.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/dma.h \
- /home/jet/Desktop/tools/qemu/include/exec/address-spaces.h \
- /home/jet/Desktop/tools/qemu/include/block/accounting.h \
- /home/jet/Desktop/tools/qemu/include/qemu/timed-average.h \
- /home/jet/Desktop/tools/qemu/include/hw/qdev-properties.h \
- /home/jet/Desktop/tools/qemu/include/hw/arm/exynos4210.h \
- /home/jet/Desktop/tools/qemu/include/hw/or-irq.h \
- /home/jet/Desktop/tools/qemu/include/hw/intc/exynos4210_gic.h \
- /home/jet/Desktop/tools/qemu/include/hw/intc/exynos4210_combiner.h \
- /home/jet/Desktop/tools/qemu/include/hw/core/split-irq.h \
- /home/jet/Desktop/tools/qemu/include/hw/sd/sdhci.h \
- /home/jet/Desktop/tools/qemu/include/hw/pci/pci_device.h \
- /home/jet/Desktop/tools/qemu/include/hw/pci/pci.h \
- /home/jet/Desktop/tools/qemu/include/hw/isa/isa.h \
- /home/jet/Desktop/tools/qemu/include/exec/ioport.h \
- /home/jet/Desktop/tools/qemu/include/hw/pci/pci_ids.h \
- /home/jet/Desktop/tools/qemu/include/hw/pci/pci_regs.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/pci_regs.h \
- /home/jet/Desktop/tools/qemu/include/hw/pci/pcie.h \
- /home/jet/Desktop/tools/qemu/include/hw/pci/pcie_regs.h \
- /home/jet/Desktop/tools/qemu/include/hw/pci/pcie_aer.h \
- /home/jet/Desktop/tools/qemu/include/hw/pci/pcie_sriov.h \
- /home/jet/Desktop/tools/qemu/include/hw/sd/sd.h \
- /home/jet/Desktop/tools/qemu/hw/usb/hcd-ehci.h \
- /home/jet/Desktop/tools/qemu/include/hw/usb.h
+ /home/Jet/QEMU/qemu/include/block/block-io.h \
+ /home/Jet/QEMU/qemu/include/block/aio-wait.h \
+ /home/Jet/QEMU/qemu/include/qemu/main-loop.h \
+ /home/Jet/QEMU/qemu/include/sysemu/event-loop-base.h \
+ /home/Jet/QEMU/qemu/include/qemu/iov.h \
+ /home/Jet/QEMU/qemu/include/sysemu/sysemu.h \
+ /home/Jet/QEMU/qemu/include/qemu/uuid.h \
+ /home/Jet/QEMU/qemu/include/hw/arm/boot.h \
+ /home/Jet/QEMU/qemu/include/hw/loader.h \
+ /home/Jet/QEMU/qemu/include/hw/nvram/fw_cfg.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/qemu_fw_cfg.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/types.h \
+ /home/Jet/QEMU/qemu/include/sysemu/dma.h \
+ /home/Jet/QEMU/qemu/include/exec/address-spaces.h \
+ /home/Jet/QEMU/qemu/include/block/accounting.h \
+ /home/Jet/QEMU/qemu/include/qemu/timed-average.h \
+ /home/Jet/QEMU/qemu/include/hw/qdev-properties.h \
+ /home/Jet/QEMU/qemu/include/hw/arm/exynos4210.h \
+ /home/Jet/QEMU/qemu/include/hw/or-irq.h \
+ /home/Jet/QEMU/qemu/include/hw/intc/exynos4210_gic.h \
+ /home/Jet/QEMU/qemu/include/hw/intc/exynos4210_combiner.h \
+ /home/Jet/QEMU/qemu/include/hw/core/split-irq.h \
+ /home/Jet/QEMU/qemu/include/hw/sd/sdhci.h \
+ /home/Jet/QEMU/qemu/include/hw/pci/pci_device.h \
+ /home/Jet/QEMU/qemu/include/hw/pci/pci.h \
+ /home/Jet/QEMU/qemu/include/hw/isa/isa.h \
+ /home/Jet/QEMU/qemu/include/exec/ioport.h \
+ /home/Jet/QEMU/qemu/include/hw/pci/pci_ids.h \
+ /home/Jet/QEMU/qemu/include/hw/pci/pci_regs.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/pci_regs.h \
+ /home/Jet/QEMU/qemu/include/hw/pci/pcie.h \
+ /home/Jet/QEMU/qemu/include/hw/pci/pcie_regs.h \
+ /home/Jet/QEMU/qemu/include/hw/pci/pcie_aer.h \
+ /home/Jet/QEMU/qemu/include/hw/pci/pcie_sriov.h \
+ /home/Jet/QEMU/qemu/include/hw/sd/sd.h \
+ /home/Jet/QEMU/qemu/hw/usb/hcd-ehci.h \
+ /home/Jet/QEMU/qemu/include/hw/usb.h

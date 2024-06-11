@@ -1,8 +1,7 @@
 libqom.fa.p/qom_object_interfaces.c.o: ../qom/object_interfaces.c \
- /usr/include/stdc-predef.h \
- /home/jet/Desktop/tools/qemu/include/qemu/osdep.h config-host.h \
- /home/jet/Desktop/tools/qemu/include/exec/poison.h config-poison.h \
- /home/jet/Desktop/tools/qemu/include/qemu/compiler.h \
+ /usr/include/stdc-predef.h /home/Jet/QEMU/qemu/include/qemu/osdep.h \
+ config-host.h /home/Jet/QEMU/qemu/include/exec/poison.h config-poison.h \
+ /home/Jet/QEMU/qemu/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -105,9 +104,9 @@ libqom.fa.p/qom_object_interfaces.c.o: ../qom/object_interfaces.c \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/jet/Desktop/tools/qemu/linux-headers/asm-generic/bitsperlong.h \
+ /home/Jet/QEMU/qemu/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/jet/Desktop/tools/qemu/linux-headers/linux/stddef.h \
+ /home/Jet/QEMU/qemu/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -142,9 +141,8 @@ libqom.fa.p/qom_object_interfaces.c.o: ../qom/object_interfaces.c \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/jet/Desktop/tools/qemu/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/Jet/QEMU/qemu/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
@@ -221,7 +219,7 @@ libqom.fa.p/qom_object_interfaces.c.o: ../qom/object_interfaces.c \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/os-posix.h \
+ /home/Jet/QEMU/qemu/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -243,33 +241,31 @@ libqom.fa.p/qom_object_interfaces.c.o: ../qom/object_interfaces.c \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/jet/Desktop/tools/qemu/include/qemu/typedefs.h \
- /home/jet/Desktop/tools/qemu/include/qemu/cutils.h \
- /home/jet/Desktop/tools/qemu/include/qapi/error.h \
- qapi/qapi-types-error.h qapi/qapi-builtin-types.h \
- /home/jet/Desktop/tools/qemu/include/qapi/util.h qapi/qapi-visit-qom.h \
- qapi/qapi-builtin-visit.h \
- /home/jet/Desktop/tools/qemu/include/qapi/visitor.h \
- qapi/qapi-types-compat.h qapi/qapi-types-qom.h qapi/qapi-types-authz.h \
+ /home/Jet/QEMU/qemu/include/qemu/typedefs.h \
+ /home/Jet/QEMU/qemu/include/qemu/cutils.h \
+ /home/Jet/QEMU/qemu/include/qapi/error.h qapi/qapi-types-error.h \
+ qapi/qapi-builtin-types.h /home/Jet/QEMU/qemu/include/qapi/util.h \
+ qapi/qapi-visit-qom.h qapi/qapi-builtin-visit.h \
+ /home/Jet/QEMU/qemu/include/qapi/visitor.h qapi/qapi-types-compat.h \
+ qapi/qapi-types-qom.h qapi/qapi-types-authz.h \
  qapi/qapi-types-block-core.h qapi/qapi-types-common.h \
  qapi/qapi-types-crypto.h qapi/qapi-types-job.h qapi/qapi-types-sockets.h \
  qapi/qapi-visit-authz.h qapi/qapi-visit-block-core.h \
  qapi/qapi-visit-common.h qapi/qapi-visit-crypto.h qapi/qapi-visit-job.h \
- qapi/qapi-visit-sockets.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qobject.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qdict.h \
- /home/jet/Desktop/tools/qemu/include/qemu/queue.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qerror.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qjson.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qobject-input-visitor.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qobject-output-visitor.h \
- /home/jet/Desktop/tools/qemu/include/qom/object_interfaces.h \
- /home/jet/Desktop/tools/qemu/include/qom/object.h \
- /home/jet/Desktop/tools/qemu/include/qemu/module.h qapi/qapi-types-qom.h \
- /home/jet/Desktop/tools/qemu/include/qemu/help_option.h \
- /home/jet/Desktop/tools/qemu/include/qemu/id.h \
- /home/jet/Desktop/tools/qemu/include/qemu/option.h \
- /home/jet/Desktop/tools/qemu/include/qemu/qemu-print.h \
- /home/jet/Desktop/tools/qemu/include/qapi/opts-visitor.h \
- /home/jet/Desktop/tools/qemu/include/qemu/config-file.h \
- /home/jet/Desktop/tools/qemu/include/qemu/keyval.h
+ qapi/qapi-visit-sockets.h /home/Jet/QEMU/qemu/include/qapi/qmp/qobject.h \
+ /home/Jet/QEMU/qemu/include/qapi/qmp/qdict.h \
+ /home/Jet/QEMU/qemu/include/qemu/queue.h \
+ /home/Jet/QEMU/qemu/include/qapi/qmp/qerror.h \
+ /home/Jet/QEMU/qemu/include/qapi/qmp/qjson.h \
+ /home/Jet/QEMU/qemu/include/qapi/qobject-input-visitor.h \
+ /home/Jet/QEMU/qemu/include/qapi/qobject-output-visitor.h \
+ /home/Jet/QEMU/qemu/include/qom/object_interfaces.h \
+ /home/Jet/QEMU/qemu/include/qom/object.h \
+ /home/Jet/QEMU/qemu/include/qemu/module.h qapi/qapi-types-qom.h \
+ /home/Jet/QEMU/qemu/include/qemu/help_option.h \
+ /home/Jet/QEMU/qemu/include/qemu/id.h \
+ /home/Jet/QEMU/qemu/include/qemu/option.h \
+ /home/Jet/QEMU/qemu/include/qemu/qemu-print.h \
+ /home/Jet/QEMU/qemu/include/qapi/opts-visitor.h \
+ /home/Jet/QEMU/qemu/include/qemu/config-file.h \
+ /home/Jet/QEMU/qemu/include/qemu/keyval.h

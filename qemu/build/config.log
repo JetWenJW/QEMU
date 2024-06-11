@@ -1,4 +1,4 @@
-# QEMU configure log 西元2024年06月05日 (週三) 14時51分55秒 CST
+# QEMU configure log Sun Jun  9 12:49:57 CST 2024
 # Configured with: '../configure' '--target-list=arm-softmmu,arm-linux-user'
 
 #
@@ -18,3 +18,6 @@ cc -m64 -o config-temp/qemu-conf.exe config-temp/qemu-conf.c
 config-temp/qemu-conf.c:2:3: error: #error LITTLE
     2 | # error LITTLE
       |   ^~~~~
+arm-linux-gnueabihf-gcc -o config-temp/qemu-conf.o -c config-temp/qemu-conf.c
+arm-linux-gnueabihf-gcc -r -nostdlib -o config-temp/qemu-conf2.o config-temp/qemu-conf.o -lgcc
+arm-linux-gnueabihf-gcc -o config-temp/qemu-conf.exe config-temp/qemu-conf.c -static

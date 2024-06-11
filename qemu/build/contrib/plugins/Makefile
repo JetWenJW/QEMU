@@ -1,1 +1,1 @@
-/home/jet/Desktop/tools/qemu/contrib/plugins/Makefile
+/home/Jet/QEMU/qemu/contrib/plugins/Makefile

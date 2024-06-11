@@ -1,1 +1,1 @@
-/home/jet/Desktop/tools/qemu/pc-bios/s390-ccw/Makefile
+/home/Jet/QEMU/qemu/pc-bios/s390-ccw/Makefile

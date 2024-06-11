@@ -1,1 +1,1 @@
-/home/jet/Desktop/tools/qemu/pc-bios/optionrom/Makefile
+/home/Jet/QEMU/qemu/pc-bios/optionrom/Makefile

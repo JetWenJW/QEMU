@@ -1,8 +1,8 @@
 contrib/vhost-user-input/vhost-user-input.p/main.c.o: \
  ../contrib/vhost-user-input/main.c /usr/include/stdc-predef.h \
- /home/jet/Desktop/tools/qemu/include/qemu/osdep.h config-host.h \
- /home/jet/Desktop/tools/qemu/include/exec/poison.h config-poison.h \
- /home/jet/Desktop/tools/qemu/include/qemu/compiler.h \
+ /home/Jet/QEMU/qemu/include/qemu/osdep.h config-host.h \
+ /home/Jet/QEMU/qemu/include/exec/poison.h config-poison.h \
+ /home/Jet/QEMU/qemu/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -105,9 +105,9 @@ contrib/vhost-user-input/vhost-user-input.p/main.c.o: \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/jet/Desktop/tools/qemu/linux-headers/asm-generic/bitsperlong.h \
+ /home/Jet/QEMU/qemu/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/jet/Desktop/tools/qemu/linux-headers/linux/stddef.h \
+ /home/Jet/QEMU/qemu/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -142,9 +142,8 @@ contrib/vhost-user-input/vhost-user-input.p/main.c.o: \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/jet/Desktop/tools/qemu/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/Jet/QEMU/qemu/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
@@ -221,7 +220,7 @@ contrib/vhost-user-input/vhost-user-input.p/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/os-posix.h \
+ /home/Jet/QEMU/qemu/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -243,7 +242,7 @@ contrib/vhost-user-input/vhost-user-input.p/main.c.o: \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/jet/Desktop/tools/qemu/include/qemu/typedefs.h \
+ /home/Jet/QEMU/qemu/include/qemu/typedefs.h \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
@@ -252,26 +251,24 @@ contrib/vhost-user-input/vhost-user-input.p/main.c.o: \
  /usr/include/asm-generic/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /home/jet/Desktop/tools/qemu/include/qemu/iov.h \
- /home/jet/Desktop/tools/qemu/include/qemu/bswap.h \
- /home/jet/Desktop/tools/qemu/include/qemu/sockets.h \
- qapi/qapi-types-sockets.h qapi/qapi-builtin-types.h \
- /home/jet/Desktop/tools/qemu/include/qapi/util.h \
+ /home/Jet/QEMU/qemu/include/qemu/iov.h \
+ /home/Jet/QEMU/qemu/include/qemu/bswap.h \
+ /home/Jet/QEMU/qemu/include/qemu/sockets.h qapi/qapi-types-sockets.h \
+ qapi/qapi-builtin-types.h /home/Jet/QEMU/qemu/include/qapi/util.h \
  ../subprojects/libvhost-user/libvhost-user-glib.h \
  ../subprojects/libvhost-user/libvhost-user.h /usr/include/poll.h \
  /usr/include/x86_64-linux-gnu/sys/poll.h \
  /usr/include/x86_64-linux-gnu/bits/poll.h \
  /usr/include/x86_64-linux-gnu/bits/poll2.h \
- /home/jet/Desktop/tools/qemu/linux-headers/linux/vhost.h \
- /home/jet/Desktop/tools/qemu/linux-headers/linux/vhost_types.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/vhost_types.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/types.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/virtio_config.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/virtio_ring.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/virtio_types.h \
+ /home/Jet/QEMU/qemu/linux-headers/linux/vhost.h \
+ /home/Jet/QEMU/qemu/linux-headers/linux/vhost_types.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/vhost_types.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/types.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/virtio_config.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/virtio_ring.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/virtio_types.h \
  ../subprojects/libvhost-user/standard-headers/linux/virtio_ring.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/input.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/input-event-codes.h \
- /home/jet/Desktop/tools/qemu/include/standard-headers/linux/virtio_input.h \
- /home/jet/Desktop/tools/qemu/include/qapi/error.h \
- qapi/qapi-types-error.h
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/input.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/input-event-codes.h \
+ /home/Jet/QEMU/qemu/include/standard-headers/linux/virtio_input.h \
+ /home/Jet/QEMU/qemu/include/qapi/error.h qapi/qapi-types-error.h

@@ -1,4 +1,4 @@
-cmd_scripts/kconfig/lxdialog/yesno.o := gcc -Wp,-MD,scripts/kconfig/lxdialog/.yesno.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -I/usr/include/ncursesw -DCURSES_LOC="<curses.h>"  -DNCURSES_WIDECHAR=1 -DLOCALE    -c -o scripts/kconfig/lxdialog/yesno.o scripts/kconfig/lxdialog/yesno.c
+cmd_scripts/kconfig/lxdialog/yesno.o := gcc -Wp,-MD,scripts/kconfig/lxdialog/.yesno.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer   -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -DCURSES_LOC="<ncurses.h>" -DNCURSES_WIDECHAR=1 -DLOCALE    -c -o scripts/kconfig/lxdialog/yesno.o scripts/kconfig/lxdialog/yesno.c
 
 deps_scripts/kconfig/lxdialog/yesno.o := \
   scripts/kconfig/lxdialog/yesno.c \
@@ -71,8 +71,8 @@ deps_scripts/kconfig/lxdialog/yesno.o := \
   /usr/include/strings.h \
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
-  /usr/include/ncursesw/curses.h \
-  /usr/include/ncursesw/ncurses_dll.h \
+  /usr/include/curses.h \
+  /usr/include/ncurses_dll.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -92,8 +92,10 @@ deps_scripts/kconfig/lxdialog/yesno.o := \
   /usr/include/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
-  /usr/include/ncursesw/unctrl.h \
+  /usr/include/unctrl.h \
+  /usr/include/curses.h \
 
 scripts/kconfig/lxdialog/yesno.o: $(deps_scripts/kconfig/lxdialog/yesno.o)
 

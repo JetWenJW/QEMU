@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/jet/Desktop/tools/qemu/build/pyvenv"
+set -gx VIRTUAL_ENV "/home/Jet/QEMU/qemu/build/pyvenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

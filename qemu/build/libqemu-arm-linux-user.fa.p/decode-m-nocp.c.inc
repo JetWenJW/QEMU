@@ -70,8 +70,8 @@ static void disas_m_nocp_extract_disas_m_nocp_Fmt_3(DisasContext *ctx, arg_disas
 static void disas_m_nocp_extract_disas_m_nocp_Fmt_4(DisasContext *ctx, arg_disas_m_nocp4 *a, uint32_t insn)
 {
     a->rt = extract32(insn, 12, 4);
-    a->reg = extract32(insn, 16, 4);
     a->l = extract32(insn, 20, 1);
+    a->reg = extract32(insn, 16, 4);
 }
 
 static void disas_m_nocp_extract_disas_m_nocp_Fmt_5(DisasContext *ctx, arg_nocp *a, uint32_t insn)
@@ -86,10 +86,10 @@ static void disas_m_nocp_extract_disas_m_nocp_Fmt_6(DisasContext *ctx, arg_nocp 
 
 static void disas_m_nocp_extract_vldr_sysreg(DisasContext *ctx, arg_vldr_sysreg *a, uint32_t insn)
 {
-    a->reg = deposit32(extract32(insn, 13, 3), 3, 29, extract32(insn, 22, 1));
     a->rn = extract32(insn, 16, 4);
-    a->a = extract32(insn, 23, 1);
     a->imm = times_4(ctx, extract32(insn, 0, 7));
+    a->reg = deposit32(extract32(insn, 13, 3), 3, 29, extract32(insn, 22, 1));
+    a->a = extract32(insn, 23, 1);
 }
 
 bool disas_m_nocp(DisasContext *ctx, uint32_t insn)

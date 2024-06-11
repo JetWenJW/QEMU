@@ -1,4 +1,4 @@
-#!/home/jet/Desktop/tools/qemu/build/pyvenv/bin/python3
+#!/home/Jet/QEMU/qemu/build/pyvenv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -1,9 +1,8 @@
 tests/qtest/libqos/libqos.fa.p/arm-xilinx-zynq-a9-machine.c.o: \
  ../tests/qtest/libqos/arm-xilinx-zynq-a9-machine.c \
- /usr/include/stdc-predef.h \
- /home/jet/Desktop/tools/qemu/include/qemu/osdep.h config-host.h \
- /home/jet/Desktop/tools/qemu/include/exec/poison.h config-poison.h \
- /home/jet/Desktop/tools/qemu/include/qemu/compiler.h \
+ /usr/include/stdc-predef.h /home/Jet/QEMU/qemu/include/qemu/osdep.h \
+ config-host.h /home/Jet/QEMU/qemu/include/exec/poison.h config-poison.h \
+ /home/Jet/QEMU/qemu/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -106,9 +105,9 @@ tests/qtest/libqos/libqos.fa.p/arm-xilinx-zynq-a9-machine.c.o: \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/jet/Desktop/tools/qemu/linux-headers/asm-generic/bitsperlong.h \
+ /home/Jet/QEMU/qemu/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/jet/Desktop/tools/qemu/linux-headers/linux/stddef.h \
+ /home/Jet/QEMU/qemu/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -143,9 +142,8 @@ tests/qtest/libqos/libqos.fa.p/arm-xilinx-zynq-a9-machine.c.o: \
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/jet/Desktop/tools/qemu/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/Jet/QEMU/qemu/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
@@ -222,7 +220,7 @@ tests/qtest/libqos/libqos.fa.p/arm-xilinx-zynq-a9-machine.c.o: \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/os-posix.h \
+ /home/Jet/QEMU/qemu/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -244,15 +242,14 @@ tests/qtest/libqos/libqos.fa.p/arm-xilinx-zynq-a9-machine.c.o: \
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/jet/Desktop/tools/qemu/include/qemu/typedefs.h \
+ /home/Jet/QEMU/qemu/include/qemu/typedefs.h \
  ../tests/qtest/libqos/../libqtest.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qobject.h \
- qapi/qapi-builtin-types.h \
- /home/jet/Desktop/tools/qemu/include/qapi/util.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qdict.h \
- /home/jet/Desktop/tools/qemu/include/qemu/queue.h \
+ /home/Jet/QEMU/qemu/include/qapi/qmp/qobject.h qapi/qapi-builtin-types.h \
+ /home/Jet/QEMU/qemu/include/qapi/util.h \
+ /home/Jet/QEMU/qemu/include/qapi/qmp/qdict.h \
+ /home/Jet/QEMU/qemu/include/qemu/queue.h \
  ../tests/qtest/libqos/../libqmp.h \
- /home/jet/Desktop/tools/qemu/include/qemu/module.h \
+ /home/Jet/QEMU/qemu/include/qemu/module.h \
  ../tests/qtest/libqos/libqos-malloc.h ../tests/qtest/libqos/qgraph.h \
  /usr/include/glib-2.0/gmodule.h ../tests/qtest/libqos/sdhci.h \
  ../tests/qtest/libqos/pci.h

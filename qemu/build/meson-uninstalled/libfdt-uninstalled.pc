@@ -1,7 +1,7 @@
-prefix=/home/jet/Desktop/tools/qemu/build
+prefix=/home/Jet/QEMU/qemu/build
 includedir=${prefix}/include
 libdir=${prefix}/lib/x86_64-linux-gnu
-srcdir=/home/jet/Desktop/tools/qemu
+srcdir=/home/Jet/QEMU/qemu
 
 Name: libfdt
 Description: Flat Device Tree manipulation

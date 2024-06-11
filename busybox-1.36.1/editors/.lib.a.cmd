@@ -1,1 +1,1 @@
-cmd_editors/lib.a := rm -f editors/lib.a; /home/jet/Desktop/tools/gcc-arm-Toolchain/bin/arm-none-linux-gnueabihf-ar  rcs editors/lib.a editors/awk.o editors/cmp.o editors/diff.o editors/ed.o editors/patch.o editors/sed.o editors/vi.o
+cmd_editors/lib.a := rm -f editors/lib.a; ../gcc-arm-Toolchain/bin/arm-none-linux-gnueabihf-ar  rcs editors/lib.a editors/awk.o editors/cmp.o editors/diff.o editors/ed.o editors/patch.o editors/sed.o editors/vi.o

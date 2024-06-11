@@ -1,8 +1,7 @@
 libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-commands-misc-target.c.o: \
  qapi/qapi-commands-misc-target.c /usr/include/stdc-predef.h \
- /home/jet/Desktop/tools/qemu/include/qemu/osdep.h config-host.h \
- arm-softmmu-config-target.h \
- /home/jet/Desktop/tools/qemu/include/qemu/compiler.h \
+ /home/Jet/QEMU/qemu/include/qemu/osdep.h config-host.h \
+ arm-softmmu-config-target.h /home/Jet/QEMU/qemu/include/qemu/compiler.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -105,9 +104,9 @@ libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-commands-misc-target.c.o: 
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  linux-headers/asm/bitsperlong.h \
- /home/jet/Desktop/tools/qemu/linux-headers/asm-generic/bitsperlong.h \
+ /home/Jet/QEMU/qemu/linux-headers/asm-generic/bitsperlong.h \
  /usr/include/linux/posix_types.h \
- /home/jet/Desktop/tools/qemu/linux-headers/linux/stddef.h \
+ /home/Jet/QEMU/qemu/linux-headers/linux/stddef.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types.h \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
@@ -142,9 +141,8 @@ libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-commands-misc-target.c.o: 
  /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h \
- /home/jet/Desktop/tools/qemu/include/glib-compat.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+ /home/Jet/QEMU/qemu/include/glib-compat.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
@@ -221,7 +219,7 @@ libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-commands-misc-target.c.o: 
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/glib-2.0/glib/glib-autocleanups.h \
  /usr/include/glib-2.0/glib-unix.h /usr/include/pwd.h \
- /home/jet/Desktop/tools/qemu/include/sysemu/os-posix.h \
+ /home/Jet/QEMU/qemu/include/sysemu/os-posix.h \
  /usr/include/x86_64-linux-gnu/sys/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman.h \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
@@ -243,23 +241,21 @@ libqemu-arm-softmmu.fa.p/meson-generated_.._qapi_qapi-commands-misc-target.c.o: 
  /usr/include/x86_64-linux-gnu/sys/un.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /home/jet/Desktop/tools/qemu/include/qemu/typedefs.h \
- /home/jet/Desktop/tools/qemu/include/qapi/compat-policy.h \
- /home/jet/Desktop/tools/qemu/include/qapi/error.h \
- qapi/qapi-types-error.h qapi/qapi-builtin-types.h \
- /home/jet/Desktop/tools/qemu/include/qapi/util.h \
- qapi/qapi-types-compat.h \
- /home/jet/Desktop/tools/qemu/include/qapi/visitor.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qdict.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qobject.h \
- /home/jet/Desktop/tools/qemu/include/qemu/queue.h \
- /home/jet/Desktop/tools/qemu/include/qapi/dealloc-visitor.h \
+ /home/Jet/QEMU/qemu/include/qemu/typedefs.h \
+ /home/Jet/QEMU/qemu/include/qapi/compat-policy.h \
+ /home/Jet/QEMU/qemu/include/qapi/error.h qapi/qapi-types-error.h \
+ qapi/qapi-builtin-types.h /home/Jet/QEMU/qemu/include/qapi/util.h \
+ qapi/qapi-types-compat.h /home/Jet/QEMU/qemu/include/qapi/visitor.h \
+ /home/Jet/QEMU/qemu/include/qapi/qmp/qdict.h \
+ /home/Jet/QEMU/qemu/include/qapi/qmp/qobject.h \
+ /home/Jet/QEMU/qemu/include/qemu/queue.h \
+ /home/Jet/QEMU/qemu/include/qapi/dealloc-visitor.h \
  qapi/qapi-visit-misc-target.h qapi/qapi-builtin-visit.h \
  qapi/qapi-types-misc-target.h qapi/qapi-commands-misc-target.h \
- /home/jet/Desktop/tools/qemu/include/qapi/qmp/qjson.h \
+ /home/Jet/QEMU/qemu/include/qapi/qmp/qjson.h \
  trace/trace-qapi_commands_misc_target_trace_events.h \
- /home/jet/Desktop/tools/qemu/trace/control.h \
- /home/jet/Desktop/tools/qemu/trace/event-internal.h \
- /home/jet/Desktop/tools/qemu/trace/control-internal.h \
- /home/jet/Desktop/tools/qemu/include/qemu/log-for-trace.h \
- /home/jet/Desktop/tools/qemu/include/qemu/error-report.h
+ /home/Jet/QEMU/qemu/trace/control.h \
+ /home/Jet/QEMU/qemu/trace/event-internal.h \
+ /home/Jet/QEMU/qemu/trace/control-internal.h \
+ /home/Jet/QEMU/qemu/include/qemu/log-for-trace.h \
+ /home/Jet/QEMU/qemu/include/qemu/error-report.h
