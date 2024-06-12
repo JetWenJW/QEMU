@@ -1,3 +1,0 @@
-find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../rootfs.cpio.gz 打包文件
-
-./qemu-system-arm -M virt-2.10 -kernel ../../linux-6.9.3/arch/arm/boot/zImage -initrd ../../rootfs.cpio.gz -append "root=/dev/mem" -nographic -L ../pc-bios/ -device pci-echodev
