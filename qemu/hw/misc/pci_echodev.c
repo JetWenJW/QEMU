@@ -16,11 +16,15 @@
 #define INV_REGISTER	 0x4
 #define IRQ_REGISTER	 0x8
 #define RANDVAL_REGISTER 0xC
+#define DMA_SRC			 0x10
+#define DMA_DST			 0x18
+#define DMA_CNT			 0x20
+#define DMA_CMD			 0x28
 
 typedef struct PciechodevState PciechodevState;
 
 //This macro provides the instance type cast functions for a QOM type.
-DECLARE_INSTANCE_CHECKER(PciechodevState, CPCIDEV, TYPE_PCI_CUSTOM_DEVICE)
+DECLARE_INSTANCE_CHECKER(PciechodevState, PCIECHODEV, TYPE_PCI_CUSTOM_DEVICE)
 
 //struct defining/descring the state
 //of the custom pci device.
@@ -29,9 +33,74 @@ struct PciechodevState
     PCIDevice pdev;
     MemoryRegion mmio_bar0;
     MemoryRegion mmio_bar1;
-    uint32_t bar0[4];
-    uint8_t bar1[4096]; 
+    uint32_t bar0[16];
+    uint8_t bar1[4096];
+    struct dma_state
+	{
+		dma_addr_t src;
+		dma_addr_t dst;
+		dma_addr_t cnt;
+		dma_addr_t cmd;
+
+	}*dma;
 };
+
+#define DMA_RUN	1
+#define DMA_DIR(cmd)(((cmd) & 2) >> 1)
+#define DMA_TO_DEVICE	0
+#define DMA_FROM_DEVICE	1
+#define DMA_DONE	(1 << 31)
+#define DMA_ERROR	(1 << 30)
+
+
+static int check_range(uint64_t addr, uint64_t cnt)
+{
+	uint64_t end = addr + cnt;
+	if(end > 4 * 1024)
+	{
+		return -1;
+	}	
+	return 0;
+}
+
+static void fire_dma(PciechodevState *pciechodev)
+{
+	struct dma_state *dma = pciechodev->dma;
+	dma->cmd &= ~(DMA_DONE | DMA_ERROR);
+
+	if(DMA_DIR(dma->cmd) == DMA_TO_DEVICE)
+	{
+		printf("PCIECHODEV - Transfer Data from RC to EP\n");
+		printf("pci_dma_read: src: %lx, dst: %lx, cnt: %ld, cmd: %lx\n",
+				dma->src, dma->dst, dma->cnt, dma->cmd);
+		if(check_range(dma->dst, dma->cnt) == 0)
+		{
+			pci_dma_read(&pciechodev->pdev, dma->src, pciechodev->bar1 + dma->dst, dma->cnt);
+		}
+		else
+		{
+			dma->cmd |= (DMA_ERROR);	
+		}
+	}
+    else
+    {
+		printf("PCIECHODEV - Transfer Data from EP to RC\n");
+		printf("pci_dma_write: src: %lx, dst: %lx, cnt: %ld, cmd: %lx\n",
+				dma->src, dma->dst, dma->cnt, dma->cmd);
+		if(check_range(dma->dst, dma->cnt) == 0)
+		{
+			pci_dma_write(&pciechodev->pdev, dma->dst, pciechodev->bar1 + dma->src, dma->cnt);
+		}
+		else
+		{
+			dma->cmd |= (DMA_ERROR);	
+		}
+    }
+    dma->cmd &= ~(DMA_RUN);
+	dma->cmd |= (DMA_DONE);
+}
+
+
 
 static uint64_t pciechodev_bar0_mmio_read(void *opaque, hwaddr addr, unsigned size)
 {
@@ -55,11 +124,31 @@ static void pciechodev_bar0_mmio_write(void *opaque, hwaddr addr, uint64_t val,
     {
         case ID_REGISTER:
         case IRQ_REGISTER:
+			if(val & 1)
+			{
+				pci_set_irq(&pciechodev->pdev, 1);
+			}
+			else if(val & 2)
+			{
+				pci_set_irq(&pciechodev->pdev, 0);
+			}
+			pciechodev->bar0[addr/4] = val;
+			break;
         case RANDVAL_REGISTER:
             break;
         case INV_REGISTER:
             pciechodev->bar0[1] = ~val;
             break;        
+		case DMA_CMD:
+			pciechodev->dma->cmd = val;
+			if(val & DMA_RUN)
+			{
+				fire_dma(pciechodev);
+			}
+			break;
+		default:
+			pciechodev->bar0[addr/4] = val;
+			break;
     }
 }
 
@@ -154,22 +243,23 @@ static const MemoryRegionOps pciechodev_bar1_mmio_ops = {
 //implementation of the realize function.
 static void pci_pciechodev_realize(PCIDevice *pdev, Error **errp)
 {
-    PciechodevState *pciechodev = pdev;//PCIECHODEV(pdev);
+    PciechodevState *pciechodev = PCIECHODEV(pdev);
     uint8_t *pci_conf = pdev->config;
 
     pci_config_set_interrupt_pin(pci_conf, 1);
    
     /* Interrupt Mode */
-    memset(pciechodev->bar0, 0, 16);
+    memset(pciechodev->bar0, 0, 64);
     memset(pciechodev->bar1, 0, 4096);
     pciechodev->bar0[0] = 0xCAFEAFFE;
+	pciechodev->dma = (struct dma_state *)&pciechodev->bar0[4];
 
     /* Initialize IO Memory Region(pciechodev->mmio) 
      * Accesses to this region will cause the callbacks of
      * the pciechodev_mmio_ops to be called
      */
     memory_region_init_io(&pciechodev->mmio_bar0, OBJECT(pciechodev), 
-                        &pciechodev_bar0_mmio_ops, pciechodev, "pciechodev-mmio", 16);
+                        &pciechodev_bar0_mmio_ops, pciechodev, "pciechodev-mmio", 64);
     /* Registering all of above configuration */
     pci_register_bar(pdev, 0, PCI_BASE_ADDRESS_SPACE_MEMORY, &pciechodev->mmio_bar0);
     

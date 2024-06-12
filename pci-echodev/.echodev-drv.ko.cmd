@@ -1,0 +1,1 @@
+savedcmd_/home/Jet/QEMU/pci-echodev/echodev-drv.ko := /home/Jet/QEMU/gcc-arm-Toolchain/bin/arm-none-linux-gnueabihf-ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/Jet/QEMU/pci-echodev/echodev-drv.ko /home/Jet/QEMU/pci-echodev/echodev-drv.o /home/Jet/QEMU/pci-echodev/echodev-drv.mod.o
